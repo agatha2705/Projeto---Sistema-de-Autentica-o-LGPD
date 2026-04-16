@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Cadastro</title>
+</head>
+<body>
+
+    <h2>Cadastro</h2>
+
+    {% if erro %}
+        <p style="color:red;">{{ erro }}</p>
+    {% endif %}
+
+    <form method="POST" id="formCadastro" novalidate>
+
+        Email:<br>
+        <input type="email"
+               name="email"
+               id="email"
+               value="{{ email or '' }}"
+               autocomplete="username"
+               required><br><br>
+
+        Senha:<br>
+        <input type="password"
+               name="senha"
+               id="senha"
+               autocomplete="new-password"
+               required>
+
+        <!-- REGRAS FIXAS DE SENHA -->
+        <small style="display:block; color:gray; margin-top:6px; font-size:12px;">
+            A senha deve conter:
+            <ul style="margin:5px 0 10px 18px;">
+                <li>Mínimo de 8 caracteres</li>
+                <li>Pelo menos 1 letra maiúscula</li>
+                <li>Pelo menos 1 número</li>
+                <li>Pelo menos 1 caractere especial (!@#$%&*)</li>
+            </ul>
+        </small>
+
+        <br>
+
+        Confirmar Senha:<br>
+        <input type="password"
+               name="confirmar"
+               id="confirmar"
+               autocomplete="new-password"
+               required><br><br>
+
+        <button type="submit">Cadastrar</button>
+    </form>
+
+    <br>
+    <a href="/">Já tem conta? Fazer login</a>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+
+            const email = document.getElementById("email");
+            const senha = document.getElementById("senha");
+            const confirmar = document.getElementById("confirmar");
+            const form = document.getElementById("formCadastro");
+
+            email.addEventListener("keydown", function (e) {
+                if (e.key === "Enter") {
+                    e.preventDefault();
+                    senha.focus();
+                }
+            });
+
+            senha.addEventListener("keydown", function (e) {
+                if (e.key === "Enter") {
+                    e.preventDefault();
+                    confirmar.focus();
+                }
+            });
+
+            confirmar.addEventListener("keydown", function (e) {
+                if (e.key === "Enter") {
+                    e.preventDefault();
+                    form.requestSubmit();
+                }
+            });
+
+        });
+    </script>
+
+</body>
+</html>

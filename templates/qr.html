@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Ativar 2FA</title>
+</head>
+<body>
+
+    <h2>Ative sua autenticação em dois fatores</h2>
+
+    <p>1. Abra o Google Authenticator ou Microsoft Authenticator</p>
+    <p>2. Escaneie o QR Code abaixo</p>
+
+    <img src="data:image/png;base64,{{ qr_code }}" />
+
+    <form method="POST" action="/qr-confirm">
+        <button type="submit">
+            Já escaneei o QR Code
+        </button>
+    </form>
+
+    <p>3. Depois disso, vá para a tela de login 2FA</p>
+
+    <a href="/2fa">Continuar</a>
+
+</body>
+</html>

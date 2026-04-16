@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login</title>
+</head>
+<body>
+
+    <h2>Login</h2>
+
+    <!-- SUCESSO (ex: cadastro realizado) -->
+    {% if sucesso %}
+        <p style="color:green;">{{ sucesso }}</p>
+    {% endif %}
+
+    <!-- ERRO -->
+    {% if erro %}
+        <p style="color:red;">{{ erro }}</p>
+    {% endif %}
+
+    <form method="POST">
+
+        Email:<br>
+        <input type="text" name="email" required><br><br>
+
+        Senha:<br>
+        <input type="password" name="senha" required><br><br>
+
+        <button type="submit">Entrar</button>
+    </form>
+
+    <br>
+
+    <a href="/cadastro">Criar conta</a><br>
+    <a href="/recuperacao">Esqueci minha senha</a>
+
+</body>
+</html>
