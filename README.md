@@ -19,7 +19,6 @@ Também foram utilizadas bibliotecas específicas de segurança, como bcrypt par
 ## Estrutura do Projeto
  
 │── app.py
-│── sistema de autenticacao.py
 │── requirements.txt
 │── .env
 │── templates/
@@ -34,7 +33,6 @@ Também foram utilizadas bibliotecas específicas de segurança, como bcrypt par
 O sistema é composto por arquivos principais responsáveis pela lógica da aplicação, dependências e páginas web.
  
 - app.py – aplicação principal em Flask  
-- sistema de autenticacao.py – versão complementar em terminal  
 - requirements.txt – bibliotecas utilizadas  
 - templates/ – páginas HTML do sistema  
  
