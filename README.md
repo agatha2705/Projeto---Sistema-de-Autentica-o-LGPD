@@ -64,3 +64,5 @@ Dessa forma, o trabalho atende ao objetivo proposto pela disciplina e reforça a
 Para melhor visualização, apresentamos abaixo os testes realizados nas interfaces de cadastro, login e configuração de autenticação de dois fatores (2FA), e a tela de boas-vindas pós-autenticação do usuário.
 
 <img width="1781" height="988" alt="image" src="https://github.com/user-attachments/assets/752e1b97-fa70-4a98-ba2c-3612a9c0f75d" />
+
+#### Integrantes: Ágatha Mami Takaki Ayama | Alana Vagnini Barbosa | Ana Carolina da Silva
