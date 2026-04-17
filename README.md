@@ -18,16 +18,16 @@ Também foram utilizadas bibliotecas específicas de segurança, como bcrypt par
  
 ## Estrutura do Projeto
  
-│── app.py
-│── requirements.txt
-│── .env
-│── templates/
-│   ├── login.html
-│   ├── cadastro.html
-│   ├── 2fa.html
-│   ├── qr.html
-│   ├── dashboard.html
-│   ├── recuperacao.html
+│── app.py \
+│── requirements.txt \
+│── .env \
+│── templates/ \
+│   ├── login.html \
+│   ├── cadastro.html \
+│   ├── 2fa.html \
+│   ├── qr.html \
+│   ├── dashboard.html \
+│   ├── recuperacao.html \
 │   └── resetar.html
  
 O sistema é composto por arquivos principais responsáveis pela lógica da aplicação, dependências e páginas web.
